@@ -46,9 +46,9 @@ source file(s)
 
 | Tool | Role | In this project |
 |---|---|---|
-| **Tree-sitter** | fast, language-agnostic AST parsing | stubbed out with Python's built-in `ast` module for a zero-dependency demo; swap in `tree_sitter` + `tree-sitter-languages` for multi-language support (see `src/parsers/`) |
-| **Soot / WALA** | JVM CFG, call-graph, points-to analysis | represented by the lightweight intraprocedural CFG/DFG pass in `cpg_builder.py`; `src/parsers/joern_adapter.py::SootWalaAdapter` documents how to wire in real Soot (CHA/SPARK) or WALA call-graph builders for precise interprocedural Java analysis |
-| **Joern** | unified CPG storage + CPGQL queries | `src/parsers/joern_adapter.py::JoernCPGBuilder` shows how to `joern-parse` a repo, export as GraphML, and load it into the *same* NetworkX graph shape so `slicer.py` runs unmodified against a real CPG |
+| **Tree-sitter** | fast, language-agnostic AST parsing | stubbed out with Python's built-in `ast` module for a zero-dependency demo; swap in `tree_sitter` + `tree-sitter-languages` for multi-lang[...]
+| **Soot / WALA** | JVM CFG, call-graph, points-to analysis | represented by the lightweight intraprocedural CFG/DFG pass in `cpg_builder.py`; `src/parsers/joern_adapter.py::SootWalaAdapter` docum[...]
+| **Joern** | unified CPG storage + CPGQL queries | `src/parsers/joern_adapter.py::JoernCPGBuilder` shows how to `joern-parse` a repo, export as GraphML, and load it into the *same* NetworkX graph[...]
 | **NetworkX** | graph traversal & slicing | used directly and fully — `slicer.py` does real backward/forward slicing over `cfg`/`dfg` edge types |
 
 This means you can develop and test slicing logic entirely on the
@@ -103,6 +103,8 @@ Full file tokens:   382
 Sliced context:     79
 Tokens saved:       303 (79.3% reduction)
 ```
+
+![Graph Engineering Agent](./Untitled-2026-08-29-2305.png)
 
 ## Known limitation of the demo CFG (and how production fixes it)
 
