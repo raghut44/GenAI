@@ -1,0 +1,2 @@
+networkx>=3.0
+tiktoken>=0.5   # optional, falls back to a heuristic if not installed
