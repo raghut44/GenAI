@@ -1,14 +1,5 @@
 # Interview Prep Guide: Harness Engineering & LLM Evaluation
 
-This guide is built around your resume line:
-
-> **Harness Engineering** — golden-dataset regression suites, automated LLM-output scoring, CI evaluation gates for agent-generated code; guardrails & output-safety evaluation
-
-It has two parts:
-1. **Tutorial section** — plain-English explanations of each concept, so you can speak about them confidently even if you're rusty on specifics.
-2. **Q&A section** — likely interview questions with model answers you can adapt to your actual project details.
-
-Wherever you see `[YOUR DETAIL]`, swap in specifics from your real work (numbers, tool names, team size) — interviewers can tell canned answers apart from real ones, and specifics are what make an answer memorable.
 
 ---
 
